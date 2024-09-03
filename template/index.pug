@@ -1,0 +1,52 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        
+        //- Font Awesome
+        link( rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer")
+
+        //- CSS
+        link(rel="stylesheet" href="assets/css/style.css")
+
+        //- Title
+        title Monito
+    body 
+        header(class="header")
+            div(class="container")
+                div(class="header__wrap")
+
+                    //- Logo
+                    div(class="header__logo")
+                        a(href="index.html")
+                            img(src="assets/images/logo.svg" alt="logo monito")
+                    
+                    //- Menu
+                    div(class="header__menu")
+                        ul
+                            li 
+                                a(href="index.html") Trang chủ
+
+                            li 
+                                a(href="#") Danh mục
+
+                            li 
+                                a(href="#") Giới thiệu 
+
+                            li 
+                                a(href="#") Liên hệ
+
+                    //- Search
+                    form(action="#" class="header__form")
+                        input(
+                            type="text"
+                            name="keyword"
+                            value=""
+                            placeholder="Nhập từ khóa..."
+                        ) 
+                        button
+                            i(class="fa-solid fa-magnifying-glass")
+
+                    //- Button Join
+                    a(href="#" class="button button--dark") Tham Gia Cộng Đồng
