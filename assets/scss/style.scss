@@ -84,6 +84,8 @@ a {
     &__menu {
         flex: 1;
         text-align: center;
+        text-transform: capitalize;
+        
         ul {
             // reset ul
             margin: 0px;
@@ -200,6 +202,7 @@ a {
     &__buttons {
         display: inline-flex;
         gap: 18px;
+        text-transform: capitalize;
 
         .button {
             font-size: 16px;

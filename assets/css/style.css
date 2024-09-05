@@ -66,6 +66,7 @@ a {
 .header__menu {
   flex: 1;
   text-align: center;
+  text-transform: capitalize;
 }
 .header__menu ul {
   margin: 0px;
@@ -156,6 +157,7 @@ a {
 .section-1__buttons {
   display: inline-flex;
   gap: 18px;
+  text-transform: capitalize;
 }
 .section-1__buttons .button, .section-1__buttons .button__dark, .section-1__buttons .button__outline {
   font-size: 16px;
