@@ -18,7 +18,7 @@ a {
   margin-right: auto;
 }
 
-.button, .button--dark {
+.button, .button__outline, .button__dark {
   font-size: 16px;
   font-weight: 700;
   border-radius: 57px;
@@ -30,13 +30,25 @@ a {
   align-items: center;
 }
 
-.button--dark {
+.button__dark {
   background-color: #003459;
   color: #ffffff;
 }
 
+.button__outline {
+  background-color: transparent;
+  color: #003459;
+  border: 1.5px solid #003459;
+}
+.button__outline i {
+  font-size: 18px;
+  margin-left: 8px;
+}
+
 .header {
   padding: 28px 0px 28px 0px;
+  position: relative;
+  z-index: 999;
 }
 .header__wrap {
   display: flex;
@@ -91,6 +103,86 @@ a {
   padding: 0px;
   border: 0px;
   order: 0;
+}
+
+.section-1 {
+  background: linear-gradient(102.87deg, #FCEED5 6.43%, #FCEED5 78.33%, #FFE7BA 104.24%);
+  border-radius: 0px 0px 40px 40px;
+  margin: -100px 0px 0px 0px;
+  padding: 100px 0px 0px 0px;
+}
+.section-1__wrap {
+  display: flex;
+}
+.section-1__background-header {
+  position: absolute;
+  top: -36px;
+  left: 48px;
+}
+.section-1__content {
+  width: 47%;
+  padding-top: 80px;
+  position: relative;
+}
+.section-1__background-01 {
+  position: absolute;
+  left: -3px;
+  top: 70px;
+}
+.section-1__title {
+  position: relative;
+  color: #003459;
+  font-weight: 700;
+  margin: 0px;
+  margin-bottom: 24px;
+  text-transform: capitalize;
+}
+.section-1__title--main {
+  font-size: 60px;
+  margin-bottom: 4px;
+}
+.section-1__title--sub {
+  font-size: 46px;
+}
+.section-1__description {
+  width: 86%;
+  text-align: left;
+  color: #242B33;
+  font-weight: 500;
+  font-size: 16px;
+  margin: 0px;
+  margin-bottom: 34px;
+}
+.section-1__buttons {
+  display: inline-flex;
+  gap: 18px;
+}
+.section-1__buttons .button, .section-1__buttons .button__dark, .section-1__buttons .button__outline {
+  font-size: 16px;
+  font-weight: 500;
+  height: 48px;
+}
+.section-1__background-03 {
+  position: absolute;
+  bottom: 0px;
+  left: -125px;
+}
+.section-1__image {
+  width: 53%;
+  position: relative;
+}
+.section-1__image--background {
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: -98px;
+}
+.section-1__image--main {
+  display: block;
+  padding-right: 74px;
+  position: relative;
+  width: 100%;
+  height: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
