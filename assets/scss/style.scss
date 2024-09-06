@@ -7,8 +7,9 @@
 }
 
 body {
-    margin: 0; // mặc định thẻ body có lớp margin xung quanh nên cần phải xóa nó
     font-family: $font-general;
+    background-color: #FDFDFD;
+    margin: 0; // mặc định thẻ body có lớp margin xung quanh nên cần phải xóa nó
 }
 
 a {
@@ -37,26 +38,58 @@ a {
     justify-content: center;
     align-items: center;
     // end căn chỉnh text nằm giữa
-}
 
-.button__dark {
-    @extend .button;
-    background-color: $color-main;
-    color: #ffffff;
-}
+    &__dark {
+        background-color: $color-main;
+        color: #ffffff;
+    }
 
-.button__outline {
-    @extend .button;
-    background-color: transparent; // nền nút ăn theo màu nền nên để transparent là chuẩn luôn
-    color: $color-main;
-    border: 1.5px solid $color-main;
-
-    i {
-        font-size: 18px;
-        margin-left: 8px;
+    &__outline {
+        background-color: transparent; // nền nút ăn theo màu nền nên để transparent là chuẩn luôn
+        color: $color-main;
+        border: 1.5px solid $color-main;
+    
+        i {
+            font-size: 18px;
+            margin-left: 8px;
+        }
     }
 }
 // end button
+
+// box head
+.box-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+    
+    &__title-sub {
+        color: #000000;
+        font-size: 16px;
+        font-weight: 500;
+        margin: 0px; // reset margin của thẻ p
+        margin-bottom: 2px;
+    } 
+
+    &__title-main {
+        color: $color-main;
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: capitalize;
+        margin: 0px; // reset margin mặc định của các thẻ head
+    }
+
+    .button__outline {
+        font-weight: 500;
+        font-size: 14px;
+
+        i {
+            font-size: 14px;
+        }
+    }
+}
+// end box head
 
 // header
 .header {
@@ -241,4 +274,88 @@ a {
 
 }
 // End Section 1
+
+// Section 2
+.section-2 {
+    padding: 60px 0px;
+
+    &__wrap {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
+// Product
+.product-item {
+    width: calc((100% - 60px) / 4);
+    box-shadow: 0px 4px 28px -2px #00000014;
+    background-color: #FDFDFD;
+    padding: 8px 8px 20px 8px;
+    border-radius: 12px;
+
+    &__image { 
+        border-radius: 10px;
+        overflow: hidden;
+        margin-bottom: 8px;
+
+        img {
+            display: block; // nếu không chỉnh về thẻ img sẽ bị hở khúc dưới và cái border-radius sẽ không ăn bên dưới
+            width: 100%;
+            aspect-ratio: 1/1;
+        }
+    }
+
+    &__title {
+        margin: 0px; // reset margin thẻ head
+        margin-bottom: 4px;
+        text-transform: capitalize;
+
+        a {
+            color: $color-text-dark;
+            font-size: 16px;
+            font-weight: 700;
+        }
+    }
+
+    &__info {
+        color: #667479;
+        font-size: 12px;
+        font-weight: 500;
+        text-transform: capitalize;
+        display: flex;
+        gap: 26px;
+        margin-bottom: 4px;   
+        position: relative;
+    }
+
+    &__info-item{
+        
+        &::after {
+            content: "";
+            // mặc định của pesudo element có display là inline
+            display: inline-block;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background-color: $color-text-light;
+            position: absolute;
+            left: 78px;
+            bottom: 5px;
+        }
+
+        &:last-child::after {
+            display: none;
+        }
+    }
+    
+
+
+    &__price {
+        color: $color-text-dark;
+        font-size: 14px;
+        font-weight: 700;
+    }
+}
+// End Product
 

@@ -4,8 +4,9 @@
 }
 
 body {
-  margin: 0;
   font-family: "Be Vietnam Pro", sans-serif;
+  background-color: #FDFDFD;
+  margin: 0;
 }
 
 a {
@@ -18,7 +19,7 @@ a {
   margin-right: auto;
 }
 
-.button, .button__outline, .button__dark {
+.button {
   font-size: 16px;
   font-weight: 700;
   border-radius: 57px;
@@ -29,12 +30,10 @@ a {
   justify-content: center;
   align-items: center;
 }
-
 .button__dark {
   background-color: #003459;
   color: #ffffff;
 }
-
 .button__outline {
   background-color: transparent;
   color: #003459;
@@ -43,6 +42,34 @@ a {
 .button__outline i {
   font-size: 18px;
   margin-left: 8px;
+}
+
+.box-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+.box-head__title-sub {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0px;
+  margin-bottom: 2px;
+}
+.box-head__title-main {
+  color: #003459;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin: 0px;
+}
+.box-head .button__outline {
+  font-weight: 500;
+  font-size: 14px;
+}
+.box-head .button__outline i {
+  font-size: 14px;
 }
 
 .header {
@@ -159,7 +186,7 @@ a {
   gap: 18px;
   text-transform: capitalize;
 }
-.section-1__buttons .button, .section-1__buttons .button__dark, .section-1__buttons .button__outline {
+.section-1__buttons .button {
   font-size: 16px;
   font-weight: 500;
   height: 48px;
@@ -185,6 +212,72 @@ a {
   position: relative;
   width: 100%;
   height: auto;
+}
+
+.section-2 {
+  padding: 60px 0px;
+}
+.section-2__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.product-item {
+  width: calc((100% - 60px) / 4);
+  box-shadow: 0px 4px 28px -2px rgba(0, 0, 0, 0.0784313725);
+  background-color: #FDFDFD;
+  padding: 8px 8px 20px 8px;
+  border-radius: 12px;
+}
+.product-item__image {
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+.product-item__image img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+.product-item__title {
+  margin: 0px;
+  margin-bottom: 4px;
+  text-transform: capitalize;
+}
+.product-item__title a {
+  color: #00171F;
+  font-size: 16px;
+  font-weight: 700;
+}
+.product-item__info {
+  color: #667479;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: capitalize;
+  display: flex;
+  gap: 26px;
+  margin-bottom: 4px;
+  position: relative;
+}
+.product-item__info-item::after {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #667479;
+  position: absolute;
+  left: 78px;
+  bottom: 5px;
+}
+.product-item__info-item:last-child::after {
+  display: none;
+}
+.product-item__price {
+  color: #00171F;
+  font-size: 14px;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=style.css.map */
