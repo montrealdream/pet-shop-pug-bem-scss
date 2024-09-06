@@ -349,8 +349,6 @@ a {
         }
     }
     
-
-
     &__price {
         color: $color-text-dark;
         font-size: 14px;
@@ -359,3 +357,78 @@ a {
 }
 // End Product
 
+// Section 3
+.section-3 {
+
+    &__wrap {
+        background-image: url(../images/section-three-background.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        display: flex;  
+        justify-content: space-between;
+
+        border-radius: 20px;
+    }
+
+    &__image {
+        width: 39%;
+        height: auto;
+        margin: 36px 0px 0px 20px;
+
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    &__content {
+        text-align: right;
+        width: calc(40% - 20px);
+        margin: 56px 85px 0px 0px;
+    }
+
+    &__title {
+        color: $color-main;
+        font-weight: 700;
+        margin: 0px; // reset margin mặc định của thẻ head
+        margin-bottom: 8px;
+
+        &--main {
+            font-size: 52px;
+            margin-bottom: 8px;
+        }
+
+        &--sub {
+            font-size: 36px;
+        }
+    }
+    
+    &__description {
+        color: #242B33;
+        font-size: 12px;
+        font-weight: 500;
+        padding-left: 54px;
+        margin: 0px; // reset margin mặc định của thẻ P
+        margin-bottom: 24px;
+    }
+
+    &__buttons {
+        display: inline-flex;
+        gap: 20px;
+
+        .button__outline {
+            font-size: 16px;
+            font-weight: 500;
+            height: 48px;
+        }
+
+        .button__dark {
+            font-size: 16px;
+            font-weight: 500;
+            height: 48px;
+        }
+    }
+}
+// End Section 3
