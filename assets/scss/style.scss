@@ -432,3 +432,82 @@ a {
     }
 }
 // End Section 3
+
+// Section 4
+.section-4 {
+    padding: 60px 0px;
+
+    &__wrap {
+        display: flex;
+        gap: 20px;
+    }
+}
+// End Section 4
+
+// Article
+.article-item {
+    width: calc((100% - 40px) / 3);
+    padding: 8px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 28px -2px #00000014;
+
+
+    &__image {
+        aspect-ratio: 364/243;
+        margin-bottom: 5px;
+        border-radius: 12px;
+        overflow: hidden;
+
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    &__content {
+        padding: 8px;
+    }
+
+    &__tag {
+        display: inline-block;
+        font-size: 10px;
+        font-weight: 600;
+        padding: 4px 10px;
+        border-radius: 28px;
+        margin-bottom: 10px;
+
+        &--blue {
+            background-color: #00A7E7;
+            color: #FDFDFD;
+        }
+    }
+
+    &__title {
+        margin: 0px; // reset margin thẻ head
+        margin-bottom: 6px; 
+        // wrap text
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        a {
+            color: $color-text-dark;
+            font-size: 16px;
+            font-weight: 700;
+        }
+    }
+
+    &__description {
+        color: #242B33;
+        font-size: 14px;
+        font-weight: 400;
+        margin: 0px; // reset margin mặc định của thẻ P
+
+        // wrap text
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+}
+// End Article
