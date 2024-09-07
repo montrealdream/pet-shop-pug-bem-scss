@@ -38,21 +38,23 @@ a {
     justify-content: center;
     align-items: center;
     // end căn chỉnh text nằm giữa
+}
 
-    &__dark {
-        background-color: $color-main;
-        color: #ffffff;
-    }
+.button-dark { 
+    @extend .button;
+    background-color: $color-main;
+    color: #ffffff;
+}
 
-    &__outline {
-        background-color: transparent; // nền nút ăn theo màu nền nên để transparent là chuẩn luôn
-        color: $color-main;
-        border: 1.5px solid $color-main;
-    
-        i {
-            font-size: 18px;
-            margin-left: 8px;
-        }
+.button-outline {
+    @extend .button;
+    background-color: transparent; // nền nút ăn theo màu nền nên để transparent là chuẩn luôn
+    color: $color-main;
+    border: 1.5px solid $color-main;
+
+    i {
+        font-size: 18px;
+        margin-left: 8px;
     }
 }
 // end button
@@ -80,7 +82,7 @@ a {
         margin: 0px; // reset margin mặc định của các thẻ head
     }
 
-    .button__outline {
+    .button-outline {
         font-weight: 500;
         font-size: 14px;
 
@@ -419,13 +421,13 @@ a {
         gap: 20px;
         text-transform: capitalize;
         
-        .button__outline {
+        .button-outline {
             font-size: 16px;
             font-weight: 500;
             height: 48px;
         }
 
-        .button__dark {
+        .button-dark {
             font-size: 16px;
             font-weight: 500;
             height: 48px;
@@ -512,3 +514,138 @@ a {
     }
 }
 // End Article
+
+// Footer
+.footer {
+    background: linear-gradient(102.87deg, #FCEED5 6.43%, #FCEED5 78.33%, #FFE7BA 104.24%);
+
+    padding: 80px 0px 50px;
+
+    &__top {
+        background-color: $color-main;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+
+        padding: 32px;
+        border-radius: 16px;
+    }
+
+    &__top-title {
+        color: #FDFDFD;
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: capitalize;
+
+        width: 34%;
+        margin: 0px; // reset margin thẻ head
+    }
+
+    &__top-form {
+        width: 66%;
+        background-color: #FFFFFF;
+        display: flex;
+        gap: 12px;
+        padding: 12px;
+        border-radius: 14px;
+
+        input {
+            flex: 1;
+            background-color: transparent;
+            border: 1px solid #99A2A5;
+            border-radius: 8px;
+            padding: 14px 28px;
+        }
+
+        .button-dark {
+            border-radius: 8px;
+            padding: 12px 28px;
+            font-size: 16px;
+            font-weight: 500;
+            height: 48px;
+        }
+    }
+
+    &__middle {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 40px 0px;
+        border-bottom: 1px solid #CCD1D2;
+    }
+
+    &__middle-links {
+        // reset ul 
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+
+        display: flex;
+        gap: 60px;
+
+        a {
+            color: $color-text-dark;
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+
+    &__middle-socials {
+        // reset ul 
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+
+        display: flex;
+        gap: 40px;
+
+        a {
+            color: $color-text-dark;
+            font-size: 24px;
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 50px;
+    }
+
+    &__bottom-copyright {
+        width: 40%;
+        color: $color-text-light;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    &__bottom-logo {
+        width: 20%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__bottom-provision {
+        // reset ul
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+
+        width: 40%;
+        display: flex;
+        justify-content: flex-end;
+        gap: 32px;
+
+        a {
+            color: $color-text-light;
+            font-size: 14px;
+            font-weight: 500;
+        }
+    }
+
+}
+// End Footer

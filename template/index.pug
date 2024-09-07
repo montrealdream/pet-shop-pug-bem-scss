@@ -50,7 +50,7 @@ html(lang="en")
                             i(class="fa-solid fa-magnifying-glass")
 
                     //- Button Join
-                    a(href="#" class="button button__dark") Tham Gia Cộng Đồng
+                    a(href="#" class="button button-dark") Tham Gia Cộng Đồng
         //- End Header
 
         //- Section 1
@@ -75,10 +75,10 @@ html(lang="en")
                         p(class="section-1__description").
                             Có một con thú cưng đồng nghĩa với việc bạn có thêm niềm vui mới. Chúng tôi có hơn 200 con thú cưng khác nhau có thể đáp ứng nhu cầu của bạn!
                         div(class="section-1__buttons")
-                            a(href="#" class="button button__outline")
+                            a(href="#" class="button button-outline")
                                 |   Giới thiệu 
                                 i(class="fa-regular fa-circle-play")
-                            a(href="#" class="button button__dark")
+                            a(href="#" class="button button-dark")
                                 | Khám Phá Ngay
                         img(
                             class="section-1__background-03"
@@ -108,7 +108,7 @@ html(lang="en")
                             h2(class="box-head__title-main") 
                                 |   Một Số vật Nuôi của chúng tôi
                     div(class="box-head__right") 
-                        a(href="#" class="button button__outline")
+                        a(href="#" class="button button-outline")
                             |   Xem thêm 
                             i(class="fa-solid fa-angle-right")
 
@@ -277,10 +277,10 @@ html(lang="en")
                         p(class="section-3__description").
                             Có một con thú cưng đồng nghĩa với việc bạn có thêm niềm vui mới. Chúng tôi có hơn 200 con thú cưng khác nhau có thể đáp ứng nhu cầu của bạn!
                         div(class="section-3__buttons")
-                            a(href="#" class="button button__outline")
+                            a(href="#" class="button button-outline")
                                 |   Giới thiệu
                                 i(class="fa-regular fa-circle-play")
-                            a(href="#" class="button button__dark")
+                            a(href="#" class="button button-dark")
                                 |   Khám Phá ngay
         //- End Section 3
 
@@ -295,7 +295,7 @@ html(lang="en")
                         h2(class="box-head__title-main") 
                             |   Kiến thức thú cưng hữu ích
                     div(class="box-head__right")
-                        a(href="#" class="button button__outline")
+                        a(href="#" class="button button-outline")
                             |   Xem thêm
                             i(class="fa-solid fa-angle-right")
                 
@@ -344,3 +344,66 @@ html(lang="en")
                             p(class="article-item__description").
                                 Chó cắn là hiện tượng phổ biến trong quá trình phát triển. Tuy nhiên, không ai muốn thấy đồ đạc, vật dụng quan trọng của mình bị chó cắn.
         //- End Section 4
+
+        //- Footer
+        footer(class="footer")
+            div(class="container")
+                div(class="footer__top")
+                    h2(class="footer__top-title")
+                        |   Đăng ký ngay để không bỏ lỡ các chương trình của chúng tôi
+                    form(
+                        action="#"
+                        method="POST"
+                        class="footer__top-form"
+                    )
+                        input(
+                            class=""
+                            type="text"
+                            name="email"
+                            value=""
+                            placeholder="Nhập email của bạn..."
+                        )
+                        button(
+                            class="button button-dark"
+                            type="submit"
+                        ) Đăng Ký Ngay
+
+                div(class="footer__middle") 
+                    ul(class="footer__middle-links")
+                        li 
+                            a(href="#") Trang chủ
+                        li 
+                            a(href="#") Danh mục
+                        li 
+                            a(href="#") Giới thiệu
+                        li 
+                            a(href="#") Liên hệ
+                    
+                    ul(class="footer__middle-socials")
+                        li 
+                            a(href="#") 
+                                i(class="fa-brands fa-facebook")
+                        li 
+                            a(href="#") 
+                                i(class="fa-brands fa-twitter")
+                        li 
+                            a(href="#") 
+                                i(class="fa-brands fa-instagram")
+                        li 
+                            a(href="#") 
+                                i(class="fa-brands fa-youtube")
+                
+                div(class="footer__bottom") 
+                    p(class="footer__bottom-copyright")
+                        |   © 2023 28Tech. All rights reserved.
+
+                    div(class="footer__bottom-logo")
+                        img(src="assets/images/logo.svg")
+
+                    ul(class="footer__bottom-provision")
+                        li 
+                            a(href="#") Điều khoản dịch vụ
+                        li 
+                            a(href="#") Chính sách bảo mật
+
+        //- End Footer
