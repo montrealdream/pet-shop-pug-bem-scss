@@ -441,6 +441,9 @@ a {
   border-radius: 8px;
   padding: 14px 28px;
 }
+.footer__top-form input::placeholder {
+  color: #99A2A5;
+}
 .footer__top-form .button-dark {
   border-radius: 8px;
   padding: 12px 28px;
