@@ -1,0 +1,49 @@
+header(class="header")
+    div(class="container")
+        div(class="header__wrap")
+            
+            //- Menu Mobile
+            button(
+                class="header__menu-mobile"
+            )
+                i(class="fa-solid fa-bars")
+
+            //- Logo
+            div(class="header__logo")
+                a(href="index.html")
+                    img(src="assets/images/logo.svg" alt="logo monito")
+            
+            //- Menu
+            div(class="header__menu")
+                ul
+                    li 
+                        a(href="index.html") Trang chủ
+
+                    li 
+                        a(href="#") Danh mục
+
+                    li 
+                        a(href="#") Giới thiệu 
+
+                    li 
+                        a(href="#") Liên hệ
+
+            //- Search Mobile
+            button(
+                class="header__search-mobile"
+            )
+                i(class="fa-solid fa-magnifying-glass")
+                
+            //- Search
+            form(action="#" class="header__form")
+                input(
+                    type="text"
+                    name="keyword"
+                    value=""
+                    placeholder="Nhập từ khóa..."
+                ) 
+                button
+                    i(class="fa-solid fa-magnifying-glass")
+
+            //- Button Join
+            a(href="#" class="button button-dark") Tham Gia Cộng Đồng
