@@ -768,7 +768,7 @@ a {
         &__content {
             padding-top: 23px;
         }
-        
+
         &__title-main {
             font-size: 36px;
         }
@@ -790,8 +790,32 @@ a {
 
     &__wrap {
         display: flex;
+        flex-wrap: wrap;
         gap: 20px;
     }
+
+    &__button-mobile {
+        display: none;
+    }
+
+    @media (max-width: 767.98px) {
+        padding: 40px 0px;
+
+        &__wrap {
+            gap: 12px;
+        }
+
+        &__button-mobile {
+            display: inline-block;
+            margin-top: 20px;
+            width: 100%;
+
+            font-size: 16px;
+            font-weight: 500;
+        }
+    } 
+
+
 }
 // End Section 4
 
@@ -863,6 +887,29 @@ a {
         display: -webkit-box;
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
+    }
+
+    @media (max-width: 991.98px) {
+        width: calc((100% - 20px)/2);
+    }
+
+    @media (max-width: 767.98px) {
+        &__title {
+            font-size: 16px;
+        }
+
+        &__description {
+            font-size: 14px;
+        }
+    }
+
+    @media (max-width: 576.98px) {
+        width: 100%;
+
+        &:hover {
+        transform: scale(1.02);
+        transition: all 1s;
+        }
     }
 }
 // End Article
