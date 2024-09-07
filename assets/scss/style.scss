@@ -120,6 +120,36 @@ a {
             font-size: 14px;
         }
     }
+
+    @media (max-width: 991.98px) {
+        margin-bottom: 24px;
+
+        &__title-sub {
+            font-size: 15px;
+        }
+
+        &__title-main {
+            font-size: 22px;
+        }
+    }
+
+    @media (max-width: 767.98px) {
+        &__right {
+            display: none;
+        }
+    }
+
+    @media (max-width: 576.98px) {
+        margin-bottom: 20px;
+
+        &__title-sub {
+            font-size: 14px;
+        }
+
+        &__title-main {
+            font-size: 20px;
+        }
+    }
 }
 // end box head
 
@@ -479,6 +509,34 @@ a {
         flex-wrap: wrap;
         gap: 20px;
     }
+
+    &__button-mobile {
+        display: none;
+    }
+
+    @media (max-width: 767.98px) {
+    padding: 40px 0px;
+
+         &__wrap {
+            gap: 12px;
+        }
+
+        &__button-mobile {
+            display: inline-block;
+            margin-top: 16px;
+            padding: 12px 28px;
+            width: 100%;
+            border: 1.5px solid $color-main;
+            border-radius: 56px;
+
+            font-size: 16px;
+            font-weight: 500;
+            
+            i {
+                font-size: 18px;
+            }
+        }
+    }
 }
 
 // Product
@@ -510,6 +568,12 @@ a {
         margin: 0px; // reset margin thẻ head
         margin-bottom: 4px;
         text-transform: capitalize;
+        
+        // wrap text
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
 
         a {
             color: $color-text-dark;
@@ -524,7 +588,8 @@ a {
         font-weight: 500;
         text-transform: capitalize;
         display: flex;
-        gap: 26px;
+        flex-wrap: wrap;
+        gap: 4px 26px;
         margin-bottom: 4px;   
         position: relative;
     }
@@ -553,6 +618,20 @@ a {
         color: $color-text-dark;
         font-size: 14px;
         font-weight: 700;
+    }
+
+    @media (max-width: 991.98px) {
+        width: calc((100% - 40px) / 3);
+    }
+
+    @media (max-width: 767.98px) {
+        width: calc((100% - 20px) / 2);
+    }
+
+    @media (max-width: 767.98px) {
+        &__title {
+            font-size: 14px;
+        }
     }
 }
 // End Product
