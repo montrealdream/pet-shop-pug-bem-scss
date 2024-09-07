@@ -233,7 +233,7 @@ a {
         &__wrap {
             justify-content: space-between;
         }
-        
+
         &__menu {
             display: none;
         }
@@ -257,9 +257,11 @@ a {
     // tràn nền lên header
     margin: -100px 0px 0px 0px; // lấn lên 100px 
     padding: 100px 0px 0px 0px; // vì lấn lên 100px nên cần padding xuống 100px
-    
+    overflow: hidden;
+
     &__wrap {
         display: flex;
+        flex-wrap: wrap;
     }
 
     &__background-header {
@@ -279,7 +281,7 @@ a {
     
     &__background-01 {
         position: absolute;
-        left: -3px;
+        left: -7px;
         top: 70px;
     }
 
@@ -314,6 +316,7 @@ a {
 
     &__buttons {
         display: inline-flex;
+        flex-wrap: wrap;
         gap: 18px;
         text-transform: capitalize;
 
@@ -350,7 +353,120 @@ a {
         height: auto;
     }
     
+    @media (max-width: 1199.98px) {
+        &__title {
+            margin-bottom: 20px;
+        }
 
+        &__title-main {
+            font-size: 52px;
+        }
+
+        &__title-sub {
+            font-size: 32px;
+        }
+
+        &__description {
+            font-size: 14px;
+            margin-bottom: 28px;
+        }
+
+        &__background-header {
+            left: -34px;
+        }
+
+        &__background-01 {
+            left: -18px;
+        }
+
+        &__background-03 {
+            left: -250px;
+        }
+
+        &__image-background {
+            height: 107%;
+        }
+    }
+
+    @media (max-width: 991.98px) {
+        padding: 35px 0px 0px 0px;
+        border-radius: 0px 0px 30px 30px;
+
+        &__content {
+            width: 100%;
+            order: 0;
+        }
+
+        &__background-header {
+            left: -3px;
+        }
+
+        &__background-03 {
+            display: none;
+        }
+
+        &__description {
+            width: 66%;
+        }
+
+        &__image {
+            width: 100%;
+            margin-top: 25px;
+            order: 1;
+        }
+
+        &__image-background {
+            height: 100%;
+        }
+
+        &__image-main {
+            padding-right: 0px;
+        }
+    }
+
+    @media (max-width: 767.98px) {
+        &__description {
+            width: 95%;
+        }
+    }
+
+    @media (max-width: 576.98px) {
+        border: 0px;
+        border-radius: 0px 0px 20px 20px;
+
+        &__title-main {
+            font-size: 46px;
+        }
+
+        &__title-sub {
+            font-size: 28px;
+        }
+
+        &__description {
+            font-size: 12px;
+        }
+
+        &__background-01 {
+            display: none;
+        }
+    }
+
+    @media (max-width: 417.98px) {
+        &__title {
+            margin-bottom: 15px;
+        }
+
+        &__title-main {
+            font-size: 36px;
+        }
+
+        &__description {
+            margin-bottom: 20px;
+        }
+        &__buttons {
+            justify-content: center;
+        }
+    }
 }
 // End Section 1
 
