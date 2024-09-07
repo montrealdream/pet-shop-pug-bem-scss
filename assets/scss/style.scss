@@ -1200,3 +1200,114 @@ a {
     }
 }
 // End BreadCrumb
+
+// Section 5
+.section-5 {
+    padding: 60px 0px;
+
+    &__wrap {
+        display: flex;
+        
+    }
+}
+// End Section 5
+
+// Box Filter
+.box-filter {
+    width: calc(25% - 10px);
+
+    &__title {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 12px;
+
+        img {
+            height: 20px;
+        }
+
+        h2 {
+            color: $color-main;
+            font-size: 20px;
+            font-weight: 700;
+
+            margin: 0px; // reset margin thẻ head
+        }
+    }
+
+    &__option {
+        padding-bottom: 16px;
+        border-bottom: 1px solid #EBEEEF;
+        margin-bottom: 16px;
+    }
+
+    &__option-label {
+        color: $color-text-dark;
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 12px;
+    }
+
+    &__option-list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    &__option-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        input {
+            margin: 0px;
+            width: 16px;
+            height: 16px;
+
+            &[type="checkbox"] {
+                // bỏ style checkbox mặc định ban đầu
+                appearance: none; 
+                
+                position: relative;
+                width: 15px;
+                height: 15px;
+                border: 1px solid gray;
+                border-radius: 2px;
+                /* Adjusts the position of the checkboxes on the text baseline */
+                vertical-align: -2px;
+                /* Set here so that Windows' High-Contrast Mode can override */
+                color: green;
+            }
+            
+            &[type="checkbox"]:checked::before {
+                /* Use `visibility` instead of `display` to avoid recalculating layout */
+                visibility: visible;
+            }
+
+            &[type="checkbox"]::before {
+                content: "✔";
+                position: absolute;
+                font-size: 19px;
+                right: -1px;
+                top: -0.3em;
+                visibility: hidden;
+            }
+
+            &[type="checkbox"]:disabled {
+                border-color: black;
+                background: #ddd;
+                color: gray;
+            }
+        }
+
+        label {
+            color: $color-text-dark;
+            font-size: 14px;
+            font-weight: 500;
+        }
+    }
+}
+
+// End Box Filter
+
+

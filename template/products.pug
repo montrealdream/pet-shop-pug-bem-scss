@@ -21,3 +21,57 @@ block main
     //- Section 3
     include partials/section-3.pug
     //- End Section 3
+
+    //- Section 5
+    section(class="section-5")
+        div(class="container")
+            div(class="section-5__wrap")
+
+                //- box filter
+                div(class="box-filter")
+
+                    div(class="box-filter__title")
+                        img(src="assets/images/filter-logo.svg")
+                        h2 Bộ lọc
+                
+                    div(class="box-filter__option")
+                        div(class="box-filter__option-label") Giống 
+                        div(class="box-filter__option-list")
+                            div(class="box-filter__option-item")
+                                input(type="checkbox")
+                                label(for="") Đực
+                            div(class="box-filter__option-item")
+                                input(type="checkbox")
+                                label(for="") Cái
+
+                    div(class="box-filter__option")
+                        div(class="box-filter__option-label") Màu sắc
+                        div(class="box-filter__option-list")
+                            div(class="box-filter__option-item")
+                                input(type="checkbox")
+                                label(for="") Xám
+                            div(class="box-filter__option-item")
+                                input(type="checkbox")
+                                label(for="") Đen
+                            div(class="box-filter__option-item")
+                                input(type="checkbox")
+                                label(for="") Trắng
+
+                    div(class="box-filter__option")
+                        div(class="box-filter__option-label") Kích thước 
+                        div(class="box-filter__option-list")
+                            div(class="box-filter__option-item")
+                                input(type="checkbox")
+                                label(for="") Nhỏ
+                            div(class="box-filter__option-item")
+                                input(type="checkbox")
+                                label(for="") Vừa
+                            div(class="box-filter__option-item")
+                                input(type="checkbox")
+                                label(for="") Lớn
+
+                //- products
+                div(class="products") products 
+
+
+    //- End Section 5
