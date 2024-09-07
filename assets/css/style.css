@@ -943,4 +943,37 @@ a {
   }
 }
 
+.breadcrumb {
+  padding: 10px;
+}
+.breadcrumb__wrap ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  gap: 36px;
+}
+.breadcrumb__wrap ul li {
+  position: relative;
+}
+.breadcrumb__wrap ul li::after {
+  content: "\f105";
+  line-height: 1;
+  font-weight: 900;
+  font-family: "Font Awesome 6 Free";
+  color: #667479;
+  font-size: 12px;
+  position: absolute;
+  right: -21px;
+  bottom: 3px;
+}
+.breadcrumb__wrap ul li:last-child::after {
+  display: none;
+}
+.breadcrumb__wrap ul li a {
+  color: #667479;
+  font-size: 14px;
+  font-weight: 500;
+}
+
 /*# sourceMappingURL=style.css.map */

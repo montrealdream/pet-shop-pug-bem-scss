@@ -1154,3 +1154,49 @@ a {
     }
 }
 // End Footer
+
+// BreadCrumb
+.breadcrumb {
+    padding: 10px;
+
+    &__wrap {
+        ul {
+            // reset ul
+            list-style: none;
+            padding: 0px;
+            margin: 0px;
+
+            display: flex;
+            gap: 36px;
+            
+            li {
+                position: relative;
+
+                &::after {
+                    content: "\f105";
+                    line-height: 1;
+                    font-weight: 900;
+                    font-family: "Font Awesome 6 Free";
+
+                    color: $color-text-light;
+                    font-size: 12px;
+
+                    position: absolute;
+                    right: -21px;
+                    bottom: 3px;
+                }
+
+                &:last-child::after {
+                    display: none;
+                }
+
+                a {
+                    color: $color-text-light;
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+// End BreadCrumb
