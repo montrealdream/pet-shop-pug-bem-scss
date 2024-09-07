@@ -922,7 +922,6 @@ a {
 
     &__top {
         background-color: $color-main;
-
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -956,6 +955,7 @@ a {
             border: 1px solid #99A2A5;
             border-radius: 8px;
             padding: 14px 28px;
+            outline: 0;
 
             &::placeholder {
                 color: #99A2A5;
@@ -1013,6 +1013,7 @@ a {
 
     &__bottom {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
         padding-top: 50px;
@@ -1050,5 +1051,106 @@ a {
         }
     }
 
+    @media (max-width: 1199.98px) {
+        padding: 70px 0px;
+
+        &__top-title {
+            font-size: 18px; 
+            width: 45%;
+        }
+    }
+
+    @media (max-width: 991.98px) {
+        padding: 55px 0px;
+
+        &__top {
+            flex-wrap: wrap;
+        }
+
+        &__top-title {
+            width: 100%;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__top-form {
+            width: 100%;
+        }
+
+        &__middle {
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        &__bottom-copyright {
+            width: 100%;
+            text-align: center;
+            order: 2;
+        }
+
+        &__bottom-logo {
+            width: 100%;
+            order: 0;
+            margin-bottom: 32px;
+        }
+
+        &__bottom-provision {
+            width: 100%;
+            justify-content: center;
+            order: 1;
+            margin-bottom: 12px;
+        }
+    }
+
+    @media (max-width: 767.98px) {
+        padding: 40px 0px;
+
+        &__top {
+            padding: 16px;
+        }
+
+        &__top-form {
+            flex-wrap: wrap;
+            input {
+                width: 100%;
+            }
+
+            .button-dark {
+                width: 100%;
+            }
+        }
+
+        &__middle-links {
+            flex-wrap: wrap;
+
+            a {
+                font-size: 13px;
+            }
+        }
+
+        &__middle-socials {
+            flex-wrap: wrap;
+
+            a {
+                font-size: 20px;
+            }
+        }
+
+        &__bottom {
+            padding: 36px 0px;
+        }
+
+        &__bottom-provision {
+
+            a {
+                font-size: 12px;
+            }
+        }
+
+        &__bottom-copyright {
+            font-size: 10px;
+        }
+    }
 }
 // End Footer
