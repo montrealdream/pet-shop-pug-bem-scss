@@ -1,73 +1,10 @@
-doctype html
-html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        
-        //- Favicon
-        link(href="https://cdn-icons-png.flaticon.com/512/3093/3093444.png" rel="icon" type="image/x-icon")
-        
-        //- Font Awesome
-        link( rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer")
+extends layouts/default.pug
 
-        //- CSS
-        link(rel="stylesheet" href="assets/css/style.css")
-
-        //- Title
-        title Monito
-    body 
-        //- Header
-        header(class="header")
-            div(class="container")
-                div(class="header__wrap")
-                    
-                    //- Menu Mobile
-                    button(
-                        class="header__menu-mobile"
-                    )
-                        i(class="fa-solid fa-bars")
-
-                    //- Logo
-                    div(class="header__logo")
-                        a(href="index.html")
-                            img(src="assets/images/logo.svg" alt="logo monito")
-                    
-                    //- Menu
-                    div(class="header__menu")
-                        ul
-                            li 
-                                a(href="index.html") Trang chủ
-
-                            li 
-                                a(href="#") Danh mục
-
-                            li 
-                                a(href="#") Giới thiệu 
-
-                            li 
-                                a(href="#") Liên hệ
-
-                    //- Search Mobile
-                    button(
-                        class="header__search-mobile"
-                    )
-                        i(class="fa-solid fa-magnifying-glass")
-                        
-                    //- Search
-                    form(action="#" class="header__form")
-                        input(
-                            type="text"
-                            name="keyword"
-                            value=""
-                            placeholder="Nhập từ khóa..."
-                        ) 
-                        button
-                            i(class="fa-solid fa-magnifying-glass")
-
-                    //- Button Join
-                    a(href="#" class="button button-dark") Tham Gia Cộng Đồng
-        //- End Header
-
+//- Title
+block title 
+    title Monito Kết nối tình yêu, nuôi dưỡng niềm vui
+//- Main
+block main
         //- Section 1
         section(class="section-1")
             div(class="container")
@@ -369,65 +306,3 @@ html(lang="en")
                     |   Xem thêm 
                     i(class="fa-solid fa-angle-right")
         //- End Section 4
-
-        //- Footer
-        footer(class="footer")
-            div(class="container")
-                div(class="footer__top")
-                    h2(class="footer__top-title")
-                        |   Đăng ký ngay để không bỏ lỡ các chương trình của chúng tôi
-                    form(
-                        action="#"
-                        method="POST"
-                        class="footer__top-form"
-                    )
-                        input(
-                            class=""
-                            type="text"
-                            name="email"
-                            value=""
-                            placeholder="Nhập email của bạn..."
-                        )
-                        button(
-                            class="button button-dark"
-                            type="submit"
-                        ) Đăng Ký Ngay
-
-                div(class="footer__middle") 
-                    ul(class="footer__middle-links")
-                        li 
-                            a(href="#") Trang chủ
-                        li 
-                            a(href="#") Danh mục
-                        li 
-                            a(href="#") Giới thiệu
-                        li 
-                            a(href="#") Liên hệ
-                    
-                    ul(class="footer__middle-socials")
-                        li 
-                            a(href="#") 
-                                i(class="fa-brands fa-facebook")
-                        li 
-                            a(href="#") 
-                                i(class="fa-brands fa-twitter")
-                        li 
-                            a(href="#") 
-                                i(class="fa-brands fa-instagram")
-                        li 
-                            a(href="#") 
-                                i(class="fa-brands fa-youtube")
-                
-                div(class="footer__bottom") 
-                    p(class="footer__bottom-copyright")
-                        |   © 2023 28Tech. All rights reserved.
-
-                    div(class="footer__bottom-logo")
-                        img(src="assets/images/logo.svg")
-
-                    ul(class="footer__bottom-provision")
-                        li 
-                            a(href="#") Điều khoản dịch vụ
-                        li 
-                            a(href="#") Chính sách bảo mật
-        //- End Footer
