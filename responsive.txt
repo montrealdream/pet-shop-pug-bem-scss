@@ -1,0 +1,4 @@
+● Laptop cỡ nhỏ: 1199.98px (Nhỏ hơn 1200px)
+● Máy tính bảng cỡ lớn: 991.98px (Nhỏ hơn 992px)
+● Máy tính bảng cỡ nhỏ: 767.98px (Nhỏ hơn 768px)
+● Điện thoại: 575.98px (Nhỏ hơn 576px)

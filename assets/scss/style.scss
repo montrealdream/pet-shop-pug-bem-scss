@@ -21,6 +21,23 @@ a {
     width: 1180px;
     margin-left: auto;
     margin-right: auto;
+
+    @media (max-width: 1199.98px) {
+        width: 960px;
+    }
+
+    @media (max-width: 991.98px) {
+        width: 720px;
+    }
+
+    @media (max-width: 767.98px) {
+        width: 540px;
+    }
+
+    @media (max-width: 575.98px) {
+        width: 100%;
+        padding: 0 16px;
+    }
 }
 // end container
 
@@ -183,7 +200,52 @@ a {
             order: 0; // chỉ sử dụng khi thẻ cha đang dùng display-flex, order càng thấp càng được ưu tiên
         }
     }
-    
+
+    &__menu-mobile {
+        display: none;
+    }
+
+    &__search-mobile {
+        display: none;
+    }
+
+    @media (max-width: 1199.98px) {
+        .button {
+            display: none;
+        }
+    }
+
+    @media (max-width: 991.98px) {
+        &__form {
+            display: none;
+        }
+
+        &__search-mobile {
+            display: inline-block;
+            background-color: transparent;
+            border: 0px;
+            padding: 0px;
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width: 767.98px) {
+        &__wrap {
+            justify-content: space-between;
+        }
+        
+        &__menu {
+            display: none;
+        }
+
+        &__menu-mobile {
+            display: inline-block;
+            background-color: transparent;
+            border: 0px;
+            padding: 0px;
+            font-size: 20px;
+        }
+    }
 }
 // end header
 

@@ -4,6 +4,9 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         
+        //- Favicon
+        link(href="https://cdn-icons-png.flaticon.com/512/3093/3093444.png" rel="icon" type="image/x-icon")
+        
         //- Font Awesome
         link( rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer")
 
@@ -17,6 +20,12 @@ html(lang="en")
         header(class="header")
             div(class="container")
                 div(class="header__wrap")
+                    
+                    //- Menu Mobile
+                    button(
+                        class="header__menu-mobile"
+                    )
+                        i(class="fa-solid fa-bars")
 
                     //- Logo
                     div(class="header__logo")
@@ -38,6 +47,12 @@ html(lang="en")
                             li 
                                 a(href="#") Liên hệ
 
+                    //- Search Mobile
+                    button(
+                        class="header__search-mobile"
+                    )
+                        i(class="fa-solid fa-magnifying-glass")
+                        
                     //- Search
                     form(action="#" class="header__form")
                         input(
