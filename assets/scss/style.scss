@@ -214,14 +214,15 @@ a {
         margin: 0px; // reset margin của thẻ H1
         margin-bottom: 24px; // khoảng cách với thẻ description
         text-transform: capitalize; // các chữ cái tự động viết hoa
-        &--main {
-            font-size: 60px;
-            margin-bottom: 4px;
-        }
+    }
 
-        &--sub {
-            font-size: 46px;
-        }
+    &__title-main {
+        font-size: 60px;
+        margin-bottom: 4px;
+    }
+
+    &__title-sub {
+        font-size: 46px;
     }
 
     &__description {
@@ -252,25 +253,24 @@ a {
         left: -125px;
     }
 
-
     &__image {
         width: 53%;
         position: relative;
+    } 
 
-        &--background {
-            display: block; // xóa khe hở mặc định của thẻ img
-            position: absolute;
-            bottom: 0px; 
-            left: -98px;
-        }
+    &__image-background {
+        display: block; // xóa khe hở mặc định của thẻ img
+        position: absolute;
+        bottom: 0px; 
+        left: -98px;
+    }
 
-        &--main {
-            display: block; // xóa khe hở mặc định của thẻ img
-            padding-right: 74px;
-            position: relative;
-            width: 100%; // để 100% thì ảnh sẽ không bị tràn vào box cha
-            height: auto;
-        }
+    &__image-main {
+        display: block; // xóa khe hở mặc định của thẻ img
+        padding-right: 74px;
+        position: relative;
+        width: 100%; // để 100% thì ảnh sẽ không bị tràn vào box cha
+        height: auto;
     }
     
 
@@ -396,15 +396,15 @@ a {
         font-weight: 700;
         margin: 0px; // reset margin mặc định của thẻ head
         margin-bottom: 8px;
+    }
 
-        &--main {
-            font-size: 52px;
-            margin-bottom: 8px;
-        }
+    &__title-main {
+        font-size: 52px;
+        margin-bottom: 8px;
+    }
 
-        &--sub {
-            font-size: 36px;
-        }
+    &__title-sub {
+        font-size: 36px;
     }
     
     &__description {
