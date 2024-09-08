@@ -1,0 +1,88 @@
+extends layouts/default.pug
+
+//- Title
+block title 
+    title Chi tiết sản phẩm
+
+//- Main
+block main 
+    //- Section 6
+    section(class="section-6")
+        div(class="container")
+            div(class="section-6__wrap")
+                //- Image
+                div(class="section-6__image")
+                    div(class="section-6__image-main")
+                        img(
+                            src="assets/images/section-6-image-main.jpg"
+                        )
+                    div(class="section-6__image-thumb")
+                        img(src="assets/images/section-6-image-thumb-01.png")
+                        img(src="assets/images/section-6-image-thumb-02.png")
+                        img(src="assets/images/section-6-image-thumb-03.png")
+                        img(src="assets/images/section-6-image-thumb-04.png")
+                        img(src="assets/images/section-6-image-thumb-05.png")
+                
+                //- Content
+                div(class="section-6__content")
+                    //- BreadCrumb
+                    div(class="breadcrumb")
+                        nav(class="breadcrumb__wrap")
+                            ul 
+                                li 
+                                    a(href="#") Trang chủ
+                                li 
+                                    a(href="#") Chó
+                                li 
+                                    a(href="#") Chó con
+                                li 
+                                    a(href="#") Shiba Inu Màu Nâu Đỏ
+                    //- End BreadCrumb
+
+                    //- Detail
+                    h2(class="section-6__title") Shiba Inu Màu Nâu Đỏ
+                    div(class="section-6__price") 12.000.000 VND
+                    div(class="section-6__button")
+                        a(href="#" class="button-dark") Liên hệ
+                        a(href="#" class="button-outline")
+                            i(class="fa-regular fa-comment-dots")
+                            |   Chat với Monito
+                    div(class="section-6__table")
+                        table 
+                            tbody 
+                                tr
+                                    td SKU 
+                                    td #1000078
+                                tr
+                                    td Giống 
+                                    td Cái
+                                tr
+                                    td Tuổi 
+                                    td 02 tháng
+                                tr
+                                    td Kích thước 
+                                    td Nhỏ
+                                tr
+                                    td Màu sắc 
+                                    td Nâu đỏ
+                                tr
+                                    td Mô tả ngắn 
+                                    td Giống thuần chủng Shih Tzu. Cấu trúc cơ thể tốt. Với chứng chỉ MKA và Microchip. Cha từ dòng dõi vô địch.
+                    div(class="box-share")
+                        div(class="box-share__label")
+                            img(src="assets/images/box-share-image.png")
+                            |   Chia sẻ:
+                        div(class="box-share__list")
+                            a(href="#" target="_blank") 
+                                i( class="fa-brands fa-facebook")
+                            a(href="#" target="_blank")
+                                i( class="fa-brands fa-twitter")
+                            a(href="#" target="_blank")
+                                i( class="fa-brands fa-instagram")
+                            a(href="#" target="_blank")
+                                i( class="fa-brands fa-youtube")
+                    //- End Detail
+
+                    
+    //- End Section 6
+
