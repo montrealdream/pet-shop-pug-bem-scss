@@ -1,0 +1,18 @@
+mixin product-item(item)
+    div(class="product-item")
+        div(class="product-item__image")
+            img(src=item.image)
+
+        div(class="product-item__content")
+            h3(class="product-item__title") 
+                a(href="#")
+                    |   #{item.title}
+        
+            div(class="product-item__info")
+                div(class="product-item__info-item")
+                    |   Giống: <b>#{item.gender}</b>
+                div(class="product-item__info-item")
+                    |   Tuổi: <b>#{item.age}</b>
+            
+            div(class="product-item__price") 
+                |   #{item.price}

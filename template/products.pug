@@ -1,5 +1,8 @@
 extends layouts/default.pug
 
+//- Mixins
+include mixins/product-item.pug
+
 //- Title
 block title 
     title Danh sách thú cưng
@@ -26,52 +29,150 @@ block main
     section(class="section-5")
         div(class="container")
             div(class="section-5__wrap")
-
-                //- box filter
-                div(class="box-filter")
-
-                    div(class="box-filter__title")
-                        img(src="assets/images/filter-logo.svg")
-                        h2 Bộ lọc
                 
-                    div(class="box-filter__option")
-                        div(class="box-filter__option-label") Giống 
-                        div(class="box-filter__option-list")
-                            div(class="box-filter__option-item")
-                                input(type="checkbox")
-                                label(for="") Đực
-                            div(class="box-filter__option-item")
-                                input(type="checkbox")
-                                label(for="") Cái
+                //- box filter
+                div(class="section-5__left")
+                    div(class="box-filter")
 
-                    div(class="box-filter__option")
-                        div(class="box-filter__option-label") Màu sắc
-                        div(class="box-filter__option-list")
-                            div(class="box-filter__option-item")
-                                input(type="checkbox")
-                                label(for="") Xám
-                            div(class="box-filter__option-item")
-                                input(type="checkbox")
-                                label(for="") Đen
-                            div(class="box-filter__option-item")
-                                input(type="checkbox")
-                                label(for="") Trắng
+                        div(class="box-filter__title")
+                            img(src="assets/images/filter-logo.svg")
+                            h2 Bộ lọc
+                    
+                        div(class="box-filter__option")
+                            div(class="box-filter__option-label") Giống 
+                            div(class="box-filter__option-list")
+                                div(class="box-filter__option-item")
+                                    input(type="checkbox")
+                                    label(for="") Đực
+                                div(class="box-filter__option-item")
+                                    input(type="checkbox")
+                                    label(for="") Cái
 
-                    div(class="box-filter__option")
-                        div(class="box-filter__option-label") Kích thước 
-                        div(class="box-filter__option-list")
-                            div(class="box-filter__option-item")
-                                input(type="checkbox")
-                                label(for="") Nhỏ
-                            div(class="box-filter__option-item")
-                                input(type="checkbox")
-                                label(for="") Vừa
-                            div(class="box-filter__option-item")
-                                input(type="checkbox")
-                                label(for="") Lớn
+                        div(class="box-filter__option")
+                            div(class="box-filter__option-label") Màu sắc
+                            div(class="box-filter__option-list")
+                                div(class="box-filter__option-item")
+                                    input(type="checkbox")
+                                    label(for="") Xám
+                                div(class="box-filter__option-item")
+                                    input(type="checkbox")
+                                    label(for="") Đen
+                                div(class="box-filter__option-item")
+                                    input(type="checkbox")
+                                    label(for="") Trắng
 
+                        div(class="box-filter__option")
+                            div(class="box-filter__option-label") Kích thước 
+                            div(class="box-filter__option-list")
+                                div(class="box-filter__option-item")
+                                    input(type="checkbox")
+                                    label(for="") Nhỏ
+                                div(class="box-filter__option-item")
+                                    input(type="checkbox")
+                                    label(for="") Vừa
+                                div(class="box-filter__option-item")
+                                    input(type="checkbox")
+                                    label(for="") Lớn
+                
                 //- products
-                div(class="products") products 
+                div(class="section-5__right")
+                    //- box head
+                    div(class="box-head")
+                        div(class="box-head__left")
+                            h2(class="box-head__title-main") Chó nhỏ
+                    
+                    -
+                        var pets = [
+                            {
+                                image: 'assets/images/section-two-product-item-01.jpg',
+                                title: 'MO231 - Pomeranian Trắng',
+                                gender: 'Đực',
+                                age: '02 tháng',
+                                price: '6.900.000 VND'
+                            },
+                            {
+                                image: 'assets/images/section-two-product-item-02.jpg',
+                                title: 'MO502 - Poodle Tiny Vàng',
+                                gender: 'Cái',
+                                age: '02 tháng',
+                                price: '3.900.000 VND'
+                            },
+                            {
+                                image: 'assets/images/section-two-product-item-03.jpg',
+                                title: 'MO102 - Poodle Tiny Sepia',
+                                gender: 'Đực',
+                                age: '02 tháng',
+                                price: '4.000.000 VND'
+                            },
+                            {
+                                image: 'assets/images/section-two-product-item-04.jpg',
+                                title: 'MO512 - Alaskan Malamute',
+                                gender: 'Đực',
+                                age: '03 tháng',
+                                price: '8.900.000 VND'
+                            },
+                            {
+                                image: 'assets/images/section-two-product-item-05.jpg',
+                                title: 'MO231 - Pembroke Corgi',
+                                gender: 'Đực',
+                                age: '02 tháng',
+                                price: '7.900.000 VND'
+                            },
+                            {
+                                image: 'assets/images/section-two-product-item-06.jpg',
+                                title: 'MO502 - Pembroke Corgi',
+                                gender: 'Cái',
+                                age: '02 tháng',
+                                price: '9.000.000 VND'
+                            },
+                            {
+                                image: 'assets/images/section-two-product-item-07.jpg',
+                                title: 'MO231 - Pomeranian Trắng',
+                                gender: 'Cái',
+                                age: '02 tháng',
+                                price: '6.500.000 VND'
+                            },
+                            {
+                                image: 'assets/images/section-two-product-item-07.jpg',
+                                title: 'MO231 - Pomeranian Trắng',
+                                gender: 'Cái',
+                                age: '02 tháng',
+                                price: '6.500.000 VND'
+                            },
+                            {
+                                image: 'assets/images/section-two-product-item-07.jpg',
+                                title: 'MO231 - Pomeranian Trắng',
+                                gender: 'Cái',
+                                age: '02 tháng',
+                                price: '6.500.000 VND'
+                            },
+                            {
+                                image: 'assets/images/section-two-product-item-07.jpg',
+                                title: 'MO231 - Pomeranian Trắng',
+                                gender: 'Cái',
+                                age: '02 tháng',
+                                price: '6.500.000 VND'
+                            },
+                            {
+                                image: 'assets/images/section-two-product-item-04.jpg',
+                                title: 'MO512 - Alaskan Malamute',
+                                gender: 'Đực',
+                                age: '03 tháng',
+                                price: '8.900.000 VND'
+                            },
+                            {
+                                image: 'assets/images/section-two-product-item-08.jpg',
+                                title: 'MO512 - Poodle Tiny',
+                                gender: 'Đực',
+                                age: '02 tháng',
+                                price: '5.000.000 VND'
+                            }
+                        ];
+                    //- products list
+                    div(class="section-5__products")
+                        each item, index in pets
+                            +product-item(item)
+                       
 
 
     //- End Section 5
