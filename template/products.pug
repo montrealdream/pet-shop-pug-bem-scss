@@ -80,8 +80,14 @@ block main
                     div(class="box-head")
                         div(class="box-head__left")
                             h2(class="box-head__title-main") Chó nhỏ
-                    
-                    -
+
+                        div(class="box-head__right")
+                            //- filter mobile
+                            div(class="box-filter")
+                                div(class="box-filter__title")
+                                    img(src="assets/images/filter-logo.svg")
+                                    h2 Bộ lọc
+                    -       
                         var pets = [
                             {
                                 image: 'assets/images/section-two-product-item-01.jpg',
@@ -179,7 +185,7 @@ block main
                             li
                                 a(href="#" class="pagination__item") 
                                     <i class="fa-solid fa-arrow-left"></i>
-                            
+                                    
                             li
                                 a(href="#" class="pagination__item pagination__item--active") 1
                             li
