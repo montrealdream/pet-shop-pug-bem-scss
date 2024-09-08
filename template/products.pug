@@ -172,7 +172,28 @@ block main
                     div(class="section-5__products")
                         each item, index in pets
                             +product-item(item)
-                       
 
-
+                    //- pagination
+                    nav(class="pagination")
+                        ul 
+                            li
+                                a(href="#" class="pagination__item") 
+                                    <i class="fa-solid fa-arrow-left"></i>
+                            
+                            li
+                                a(href="#" class="pagination__item pagination__item--active") 1
+                            li
+                                a(href="#" class="pagination__item") 2
+                            li
+                                a(href="#" class="pagination__item") 3
+                            li
+                                a(href="#" class="pagination__item") 4
+                            li
+                                a(href="#" class="pagination__item") ...
+                            li
+                                a(href="#" class="pagination__item") 28
+                            li
+                                a(href="#" class="pagination__item") 
+                                    <i class="fa-solid fa-arrow-right"></i>
     //- End Section 5
+    
