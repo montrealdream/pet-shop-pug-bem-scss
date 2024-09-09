@@ -1,5 +1,8 @@
 extends layouts/default.pug
 
+//- Mixin
+include mixins/product-item.pug
+
 //- Title
 block title 
     title Chi tiết sản phẩm
@@ -81,8 +84,56 @@ block main
                                 i( class="fa-brands fa-instagram")
                             a(href="#" target="_blank")
                                 i( class="fa-brands fa-youtube")
-                    //- End Detail
-
-                    
+                    //- End Detail    
     //- End Section 6
 
+    //- Section 7 Khách hàng của tôi (LÀM SAU)
+    //- End Section 7 Khách hàng của tôi (LÀM SAU)
+
+    //- Section 2
+    section(class="section-2")
+        div(class="container")
+            //- Box head
+            div(class="box-head")
+                div(class="box-head__left")
+                    div(class="box-head__title")
+                        p(class="box-head__title-sub")
+                            |   Có gì mới?
+                        h2(class="box-head__title-main")
+                            |   Xem thêm chó con
+            //- Products
+            -
+                var pets = [
+                    {
+                        image: 'assets/images/section-two-product-item-01.jpg',
+                        title: 'MO231 - Pomeranian Trắng',
+                        gender: 'Đực',
+                        age: '02 tháng',
+                        price: '6.900.000 VND'
+                    },
+                    {
+                        image: 'assets/images/section-two-product-item-02.jpg',
+                        title: 'MO502 - Poodle Tiny Vàng',
+                        gender: 'Cái',
+                        age: '02 tháng',
+                        price: '3.900.000 VND'
+                    },
+                    {
+                        image: 'assets/images/section-two-product-item-03.jpg',
+                        title: 'MO102 - Poodle Tiny Sepia',
+                        gender: 'Đực',
+                        age: '02 tháng',
+                        price: '4.000.000 VND'
+                    },
+                    {
+                        image: 'assets/images/section-two-product-item-04.jpg',
+                        title: 'MO512 - Alaskan Malamute',
+                        gender: 'Đực',
+                        age: '03 tháng',
+                        price: '8.900.000 VND'
+                    }
+                ];
+            div(class="section-2__wrap")
+                each item, index in pets 
+                    +product-item(item)
+    //- End Section 2
