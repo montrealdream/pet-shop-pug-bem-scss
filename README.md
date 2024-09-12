@@ -1,8 +1,8 @@
 ## MÔ TẢ
-Đây là dự án FrontEnd với chủ đề là Trang Web Bán Thú Cưng. <br>
-Được xây dựng bằng các công nghệ như là Pug, Scss. <br>
-Scss được viết theo chuẩn BEM (Block - Element - Modify) <br>
-Giao diện được Responsive phù hợp với mọi loại màn hình
+-  Đây là dự án FrontEnd với chủ đề là Trang Web Bán Thú Cưng. <br>
+-  Được xây dựng bằng các công nghệ như là Pug, Scss. <br>
+-  Scss được viết theo chuẩn BEM (Block - Element - Modify) <br>
+-  Giao diện được Responsive phù hợp với mọi loại màn hình
 
 ## TECH STACK
 <div>
